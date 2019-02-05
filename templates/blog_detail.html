@@ -5,4 +5,7 @@
     <h2>{{ object.title }}</h2>
     <p>{{ object.text }}</p>
 </div>
+
+<a href="{% url 'blog_edit' object.pk %}">+ Edit blog post</a>
+<a href="{% url 'blog_delete' object.pk %}">+ Delete blog post</a>
 {% endblock content %}
